@@ -4,9 +4,7 @@ public class DummyBot {
         String rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
         if ("Привет, Бот.".equals(question)) {
             rsl = "Привет, умник.";
-        } else if ("Сколько будет 2 + 2?".equals(question)) {
-            rsl = "Это ставит меня в тупик. Задайте другой вопрос.";
-          } else if ("До скорой встречи".equals(question)) {
+                 } else if ("До скорой встречи".equals(question)) {
             rsl = "Пока.";
         }
         return rsl;
@@ -19,8 +17,3 @@ public class DummyBot {
         System.out.println(rsl);
     } 
 }
-
-
-
-
-
