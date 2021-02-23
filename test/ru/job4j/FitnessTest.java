@@ -1,7 +1,5 @@
 package ru.job4j.convert;
 
-package ru.job4j.loop;
-
         import org.junit.Test;
 
         import static org.hamcrest.Matchers.is;
@@ -23,10 +21,12 @@ public class FitnessTest {
     @Test
     public void whenIvanLessByFewNik() {
         int month = Fitness.calc(50, 90);
-        assertThat(month, is(2));
+        assertThat (month, is(2));
     }
+
     @Test
     public void whenIvanEqualByNik() {
         int month = Fitness.calc(90, 90);
-        assertThat(month, is(1));
+        assertThat(month, is(0));
+    }
 }
